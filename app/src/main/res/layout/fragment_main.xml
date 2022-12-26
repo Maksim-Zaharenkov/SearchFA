@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_card_view_color"
+    tools:context=".fragments.MainFragment">
+
+    <ImageView
+        android:id="@+id/imLogo"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logotip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="23dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imLogo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/spinnerTypeAudience"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:entries="@array/string_array_type_audience"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHelpTypeAud" />
+
+            <Spinner
+                android:id="@+id/spinnerWorkingHours"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHelpWorkingHours" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/main_card_view_color"
+                android:text="@string/btn_search"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerWorkingHours" />
+
+            <TextView
+                android:id="@+id/tvHelpTypeAud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_type_audience"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvHelpWorkingHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_type_audience"
+                app:layout_constraintStart_toStartOf="@+id/spinnerTypeAudience"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerTypeAudience" />
+
+            <Button
+                android:id="@+id/btnCalendar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="sans-serif"
+                android:text="05/12/2022"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                app:layout_constraintStart_toStartOf="@+id/spinnerWorkingHours"
+                app:layout_constraintTop_toBottomOf="@+id/tvHelpCalendar"
+                app:rippleColor="@color/white" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="185dp" />
+
+            <TextView
+                android:id="@+id/tvHelpCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/help_calendar"
+                app:layout_constraintStart_toStartOf="@+id/spinnerWorkingHours"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerWorkingHours" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lineThird"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:backgroundTint="@color/main_card_view_color"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCalendar"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+                app:layout_constraintTop_toTopOf="@+id/btnCalendar" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lineFirst"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/main_card_view_color"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerTypeAudience"
+                app:layout_constraintStart_toStartOf="@+id/spinnerTypeAudience"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerTypeAudience" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lineSecond"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/main_card_view_color"
+                app:layout_constraintEnd_toEndOf="@+id/spinnerWorkingHours"
+                app:layout_constraintStart_toStartOf="@+id/spinnerWorkingHours"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerWorkingHours" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:dateTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:elevation="10dp"
+        android:selectedWeekBackgroundColor="@color/main_card_view_color"
+        android:translationZ="10dp"
+        android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="365dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

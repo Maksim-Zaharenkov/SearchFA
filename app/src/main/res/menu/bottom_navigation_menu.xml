@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_search_audience"
+        android:title="@string/item_search_audience"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="1" />
+
+    <item
+        android:id="@+id/item_about_app"
+        android:title="@string/item_about_app"
+        android:icon="@drawable/ic_about_app"
+        android:orderInCategory="2" />
+
+    <item
+        android:id="@+id/item_my_booking"
+        android:title="@string/item_my_booking"
+        android:icon="@drawable/ic_my_booking"
+        android:orderInCategory="3" />
+
+    <item
+        android:id="@+id/item_exit"
+        android:title="@string/item_exit"
+        android:icon="@drawable/ic_exit_to_app"
+        android:orderInCategory="4" />
+
+</menu>

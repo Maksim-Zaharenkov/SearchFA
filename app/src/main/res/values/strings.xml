@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">SearchFA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="help_type_audience">Тип аудитории</string>
+    <string name="help_working_hours">Рабочее время</string>
+    <string name="help_calendar">Выбор даты</string>
+
+    <string name="btn_search">Найти</string>
+
+    <string name="item_search_audience">Поиск аудитории</string>
+    <string name="item_about_app">О приложении</string>
+    <string name="item_my_booking">Мои бронирования</string>
+    <string name="item_exit">Выход</string>
+
+    <string name="hint_et_name">Имя</string>
+    <string name="hint_et_surname">Фамилия</string>
+    <string name="hint_et_student_num">Номер студенческого билета</string>
+    <string name="btn_sign_in">Войти</string>
+    <string name="tv_info">Введите данные из вашего студенческого билета</string>
+    <string name="tv_help">Данные введены неверно, попробуйте снова</string>
+
+    <string name="btn_booking_audience">Забронировать</string>
+    <string name="btn_cancel_booking">Отменить бронь</string>
+
+    <string-array name="string_array_type_audience">
+        <item>Аудитория для лекций</item>
+        <item>Аудитория для практических занятий</item>
+        <item>Аудитория для лабораторных работ</item>
+    </string-array>
+
+    <string-array name="string_array_working_hours">
+        <item>9:00 - 10:20</item>
+        <item>10:35 - 11:55</item>
+        <item>12:25 - 13:45</item>
+        <item>14:00 - 15:20</item>
+        <item>15:50 - 17:10</item>
+        <item>17:25 - 18:45</item>
+        <item>19:00 - 20:20</item>
+        <item>20:35 - 21:55</item>
+    </string-array>
+
+    <string name="about_app">
+        """Добро пожаловать в приложение по бронированию аудиторий. В данном приложении можно найти подходящую именно вам аудиторию и забронировать ее. Поиск аудиторий осуществляется дате, по типу аудитории:
+        1)Аудитория для лекций;
+        2)Аудитория для практических занятий;
+        3)Аудитория для лабораторных работ.
+        А также поиск осуществляется по времени работы аудитории:
+        1)9:00-10:20;
+        2)10:35-11:55;
+        3)12:25-13:45;
+        4)14:00-15:20;
+        5)15:50-17:10;
+        6)17:25-18:45;
+        7)19:00-20:20;
+        8)20:35-21:55.
+        После нажатия на кнопку, осуществляется поиск свободных аудиторий по заданным параметрам. Затем появляется список свободных аудиторий, в котором по нажатию мы выбираем подходящую.
+        Забронированные аудитории можно посмотреть в "Мои аудитории". Там же можно отменить бронирование."""
+    </string>
+</resources>
